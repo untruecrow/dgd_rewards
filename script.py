@@ -37,7 +37,7 @@ print annual_tx_fees_per_dgd * gold_usd
 # ================================================================
 # DGD VALUATION CALCULATION
 # Assume 5% rewards per year is satisfactory (thus, 20 * tx_fees_per_dgd)
-print 'Expected DGD value:'
+print 'Expected DGD value (USD):'
 print annual_tx_fees_per_dgd * gold_usd * 20 
 # ================================================================
 
