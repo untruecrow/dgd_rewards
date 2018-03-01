@@ -20,7 +20,7 @@ Transaction fees (DGX) earned per DGD per annum:
 3.24675
 Transaction fees (USD) earned per DGD per annum:
 146.10375
-Expected DGD value:
+Expected DGD value (USD):
 2922.075
 
 ```
