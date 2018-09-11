@@ -2,24 +2,30 @@ Calculate DGD rewards...
 
 
 Based on the following assumptions:
-Total number of DGX = 100.0m (4.5b USD)
-Average daily DGX on-chain transactions = 2.0m (90.0m USD)
+Total number of DGX = 0.652m (0.02934b USD)
+Average daily DGX on-chain transactions = 0.00652m (0.2934m USD)
 Percent of DGD locked up to receive rewards = 50.0
-Percent of locked up DGD actively voting = 90.0
+Percent of locked up DGD actively voting = 100.0
+
+
+Total transaction fees (DGX) earned per annum:
+6102.72
+Total transaction fees (USD) earned per annum:
+274622.4
 
 
 Transaction fees (DGX) earned per DGD per annum:
-1.04
+0.00305136
 Transaction fees (USD) earned per DGD per annum:
-46.8
+0.1373112
 
 
 Demurrage fees (DGX) earned per DGD per annum:
-0.0111111111111
+7.24444444444e-05
 Demurrage fees (USD) earned per DGD per annum:
-0.5
+0.00326
 
 
 Rational valuation of DGD based on 5% rewards per year...
 Expected DGD value (USD):
-946.0
+2.811424

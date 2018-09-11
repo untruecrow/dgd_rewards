@@ -24,6 +24,13 @@ daily_tx_fees = daily_dgx_transacted * tx_fee_ratio / ( ratio_locked_up * ratio_
 # Annual tx fees
 annual_tx_fees = daily_tx_fees * 360
 
+# Print answers in DGX and USD
+print >> f, 'Total transaction fees (DGX) earned per annum:'
+print >> f, annual_tx_fees
+print >> f, 'Total transaction fees (USD) earned per annum:'
+print >> f, annual_tx_fees * gold_usd
+print >> f, '\n'
+
 # Annual tx fees per DGD token
 annual_tx_fees_per_dgd = annual_tx_fees / n_dgd
 
@@ -32,22 +39,22 @@ print >> f, 'Transaction fees (DGX) earned per DGD per annum:'
 print >> f, annual_tx_fees_per_dgd
 print >> f, 'Transaction fees (USD) earned per DGD per annum:'
 print >> f, annual_tx_fees_per_dgd * gold_usd
+print >> f, '\n'
 # ================================================================
 
 # ================================================================
 # DEMURRAGE
 annual_demurrage_per_dgd = ( n_dgx / n_dgd ) * demurrage_ratio * ACT / 360
-print >> f, '\n'
 print >> f, 'Demurrage fees (DGX) earned per DGD per annum:'
 print >> f, annual_demurrage_per_dgd
 print >> f, 'Demurrage fees (USD) earned per DGD per annum:'
 print >> f, annual_demurrage_per_dgd * gold_usd
+print >> f, '\n'
 # ================================================================
 
 # ================================================================
 # DGD VALUATION CALCULATION
 # Assume 5% rewards per year is satisfactory (thus, 20 * tx_fees_per_dgd)
-print >> f, '\n'
 print >> f, 'Rational valuation of DGD based on 5% rewards per year...' 
 print >> f, 'Expected DGD value (USD):'
 print >> f, ( annual_tx_fees_per_dgd + annual_demurrage_per_dgd ) * gold_usd * 20 
